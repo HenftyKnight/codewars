@@ -7,3 +7,8 @@ def positive_sum(arr):
 
 arr = [1,-4,7,12]
 print(positive_sum(arr))
+
+"""
+Better to use the sum function
+sum(x for x in arr if x > 0)
+"""
