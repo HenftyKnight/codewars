@@ -11,8 +11,8 @@ def make_negative(number):
 """
 Best One Liner Solution
 """
-# def make_negative(number):
-#     return -abs(number)
+def make_negative(number):
+    return -abs(number)
 
 number = [1, 10, -98, 0, -1]
 for i in number:
