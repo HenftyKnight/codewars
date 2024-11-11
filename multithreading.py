@@ -41,3 +41,22 @@ thrd.join()
 
 print(f'thread started and already finished: \t{(thrd.ident != None) and (thrd.is_alive() == False)}')
 
+"""
+    Created Threads using SubClassing
+"""
+
+class MyThread(Thread):
+
+    def __init__(self):
+        super().__init__()
+    
+    # thread.start - Entry point function
+    def run(self) -> None:
+        print(f'Thread')
+        time.sleep(5)
+        print('A thread is exiting')
+
+mt = MyThread()
+
+mt.start()
+mt.join()
